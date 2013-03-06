@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'twitter-bootstrap-rails'
+
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
