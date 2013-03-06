@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'simple_form'
 gem 'twitter-bootstrap-rails'
 
 gem 'rails', '3.2.12'
