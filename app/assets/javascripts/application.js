@@ -9,11 +9,23 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-$('document').ready(function(){
-  var search = $('body').html();
-  search = search.replace(/beacon|Bacon|BACON/g, function($1){
-    return('<a href="#" rel="tooltip" data-toggle="tooltip" title="Bacon was invented by Albert Einstein." class="bacon_tooltip">'+ $1 +'</a>');
+
+
+
+$('document').ready(function () {
+
+
+
+
+  $("p:not('.bacon_carousel p'), li").each(function () {
+    $(this).html($(this).html().replace(/beacon|Bacon|BACON/g,function($1){
+      return('<a href="#" rel="tooltip" data-toggle="tooltip" title="Bacon was invented by Albert Einstein." class="bacon_tooltip">'+ $1 +'</a>');
+    }));
   });
-  $('body').html(search);
+
+
   $("a[rel=tooltip]").tooltip('toggle');
+
+
 });
+
