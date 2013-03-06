@@ -6,16 +6,35 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
- .carousel .item{
+.carousel .item{
+  overflow:hidden;
+  height:400px;
+}
 
-    overflow:hidden;
-    height:400px;
+.carousel .item img{
+  width: 100%;
+}
 
-  }
+.body{
+   font-family: 'Open Sans', sans-serif;
+}
 
-  .carousel .item img{
 
-    width: 100%;
 
-  }
+.navbar-inner{
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#B80000), to(#a90329));
+  background: -webkit-linear-gradient(#B80000, #a90329);
+  background: -moz-linear-gradient(#B80000, #a90329);
+  background: -o-linear-gradient(#B80000, #a90329);
+  background: linear-gradient(#B80000, #a90329);
+  box-shadow: 0 1px 1px #440000;
+  border:none;
+  border-radius: 0;
+}
 
+.navbar .nav li a, .navbar .brand{
+  color: #420000;
+  -moz-text-shadow: 0 1px 1px #C74747;
+  -webkit-text-shadow: 0 1px 1px #C74747;
+  text-shadow: 0 1px 1px #C74747;
+}
